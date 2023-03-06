@@ -12,7 +12,7 @@ integer value rdcount=0;
 
 //Pseudocode begins
 
-WRITERS:
+### WRITERS:
 
 wait(cntrl_mutex);
 //ensures either reader or writer one of the both should enter critical section
@@ -24,7 +24,7 @@ signal(cntrl_mutex)
 signal(rdwr_mutex);
 //after writing signals reader/another writer
 
-READERS:
+### READERS:
 wait(cntrl_mutex)
 //ensures either reader or writer one of the both should enter critical section
 wait(rd_mutex)
